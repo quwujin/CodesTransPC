@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7677C3B9-6E10-4185-8BBF-54967F480F33}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>YHFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LogTool">
+      <HintPath>..\Dll\LogTool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YHFramework.Business.CurrencyManage\Utility.cs" />
+    <Compile Include="YHFramework.Business.TimeManage\Utility.cs" />
+    <Compile Include="YHFramework.Common\DownloadHandler.cs" />
+    <Compile Include="YHFramework.Common\EmailTool.cs" />
+    <Compile Include="YHFramework.Common\Handler.cs" />
+    <Compile Include="YHFramework.DAL\ActionLogDal.cs" />
+    <Compile Include="YHFramework.DAL\ApployCheckLogDal.cs" />
+    <Compile Include="YHFramework.DAL\ApployInfoDal.cs" />
+    <Compile Include="YHFramework.DAL\BoxNumberDal.cs" />
+    <Compile Include="YHFramework.DAL\CodeDataDal.cs" />
+    <Compile Include="YHFramework.DAL\ExecutePlanDal.cs" />
+    <Compile Include="YHFramework.DAL\ExecuteWithDataTable.cs" />
+    <Compile Include="YHFramework.DAL\TableDAL.cs" />
+    <Compile Include="YHFramework.DAL\UpInfoDal.cs" />
+    <Compile Include="YHFramework.DB\DBFactory.cs" />
+    <Compile Include="YHFramework.DB\DbTool.cs" />
+    <Compile Include="YHFramework.DB\PageHelper.cs" />
+    <Compile Include="YHFramework.DB\SqlHelper.cs" />
+    <Compile Include="YHFramework.DB\SQLInfo.cs" />
+    <Compile Include="YHFramework.Security\IPAllowUtility.cs" />
+    <Compile Include="YHFramework.SysModel\ActionLogModel.cs" />
+    <Compile Include="YHFramework.SysModel\ApployCheckLogModel.cs" />
+    <Compile Include="YHFramework.SysModel\ApployInfoModel.cs" />
+    <Compile Include="YHFramework.SysModel\BoxNumberModel.cs" />
+    <Compile Include="YHFramework.SysModel\CodeDataModel.cs" />
+    <Compile Include="YHFramework.SysModel\ExecutePlanModel.cs" />
+    <Compile Include="YHFramework.SysModel\PageInfo.cs" />
+    <Compile Include="YHFramework.SysModel\PagerModel.cs" />
+    <Compile Include="YHFramework.SysModel\UpInfoModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container .form-group label {
+    text-align: left!important;
+}
+
+.wind {
+    width: 800px;
+    height: auto;
+    margin: 50px auto;
+}
+.wind h1{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.wind table tr th,.wind table tr td{
+    text-align: center!important;
+    line-height:44px;
+}
+  
+.wind .log {
+    width: 100px;
+} 
+.btn {
+    margin-left: 10px;
+    float: right;
+}
+
